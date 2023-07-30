@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="SignStyle.css">
+<link rel="stylesheet" href="Sign_Up.html">
+<link rel="stylesheet" href="Amazon.html">
+</head>
+<body>
+  
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign In</h1>
+      <hr>
+      <label for="email"><b>Email/UserName</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+     
+      <div class="clearfix">
+        <button type="Log in" class="signinbtn">Log in</button>
+        <a type="button" class="cancelbtn" href="Amazon.html">Cancel</a>
+      </div>
+
+      <div class="sign-forgrt">
+        <a href="#">forget Password</a>
+        <a href="Sign_Up.html">Sign up</a>
+      </div>
+
+    </div>
+  </form>
+<script>
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
